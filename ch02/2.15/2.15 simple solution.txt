@@ -1,0 +1,55 @@
+/*
+ *       Filename:  Arithmetic.java
+ *
+ *    Description:  Exercise 2.15 - Arithmetic
+ *
+ *        Created:  26/09/15 00:25:00
+ *       Revision:  09/10/15 15:40:40
+ *
+ *        @Author:  Bilal Mujahid - bilalmujahid.qureshi@gmail.com
+ *        @Version:  1.1
+ *
+ * =====================================================================================
+ */
+package beginner;
+import java.util.Scanner;
+public class NumbersArithmatic {
+
+	public static void main(String[] args) {
+		
+		//Declaring Scanner Object
+		Scanner scan = new Scanner(System.in);
+		
+		//Declaring Variables
+		int firstInteger;
+		int secondInteger;
+		int add;
+		int sub;
+		int mul;
+		int div;
+		
+		//Prompting user to enter first number and storing it in variable firstInteger
+		System.out.print("Enter first integer: ");
+		firstInteger = scan.nextInt();
+		
+		//Prompting user to enter first number and storing it in variable firstInteger
+		System.out.print("Enter second integer: ");
+		secondInteger = scan.nextInt();
+		
+		//Performing Arithmetic
+		add = firstInteger + secondInteger;
+		sub = firstInteger - secondInteger;
+		mul = firstInteger * secondInteger;
+		div = firstInteger / secondInteger;
+		
+		//Displaying Results
+		System.out.printf("The addition of two Integers is %d\n", add);
+		System.out.printf("The subtraction of two Integers is %d\n", sub);
+		System.out.printf("The multiplication of two Integers is %d\n", mul);
+		System.out.printf("The division of two Integers is %d\n", div);
+		
+		scan.close();
+		
+	}
+
+}
