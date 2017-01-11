@@ -1,0 +1,51 @@
+/*
+ *       Filename:  NumberCompare.java
+ *
+ *    Description:  Exercise 2.16 - Comparing Numbers
+ *
+ *        Created:  26/09/15 00:25:00
+ *       Revision:  09/10/15 15:40:40
+ *
+ *        @Author:  Bilal Mujahid - bilalmujahid.qureshi@gmail.com
+ *        @Version:  1.2
+ *
+ * =====================================================================================
+ */
+package beginner;
+import java.util.Scanner;
+
+public class NumberCompare {
+
+	public static void main(String[] args) {
+		
+		//Building Scanner Object
+		Scanner scan = new Scanner(System.in);
+		
+		//Declaring Variables
+		int firstNum;
+		int secondNum;
+		
+		//Prompting User to Enter Numbers
+		System.out.print("Enter first Number: ");
+		firstNum = scan.nextInt();
+			
+		System.out.print("Enter second Number: ");
+		secondNum = scan.nextInt();
+		
+		if (firstNum != secondNum){
+			
+			System.out.printf("%d is larger than %d\n", Math.max(firstNum,secondNum),Math.min(firstNum, secondNum));
+		}
+		
+		else{
+			System.out.printf("%d and %d are equal\n", firstNum, secondNum);
+			
+		}
+		
+		//Closing Scanner Object
+		scan.close();
+		
+
+	}
+
+}
